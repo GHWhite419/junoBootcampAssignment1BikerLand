@@ -1,0 +1,861 @@
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 125%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+figcaption,
+figure,
+main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: inherit
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio,
+video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details,
+menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* 
+=========
+My styles
+=========  
+*/
+
+/* 
+================
+Universal styles
+================
+*/
+html {
+    font-family: 'Catamaran', sans-serif;
+    color: #F4F4F4;
+}
+
+body {
+    background-color: #1F2022;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Pacifico', cursive;
+    color: #F2A11C;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #F4F4F4;
+    text-decoration: none;
+}
+
+a:active {
+    color: #F2A11C;
+}
+
+p {
+    font-size: .9rem;
+}
+
+button {
+    margin: 1.5rem auto;
+    display: block;
+    border: 0;
+    background-color: #1F2022;
+    color: #F2A11C;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .75rem 2.5rem;
+    border: 1px solid;
+}
+
+button:active {
+    color: #F4F4F4;
+    border-color: #F4F4F4;
+}
+
+
+/* 
+++++++
+Header
+++++++
+*/
+
+/* 
+*****************
+Nav menu elements
+*****************
+*/
+.navMenuToggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem;
+}
+
+.navMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #1F2022;
+    width: 0;
+    transition: .4s;
+}
+
+.navMenu:target {
+    width: 50vw;
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
+}
+
+.fa-xmark {
+    padding: 1rem;
+}
+
+.navMenu ul {
+    padding: 0rem 1rem;
+}
+
+.navMenu li {
+    padding: .5rem;
+}
+
+/* 
+*************
+Header proper
+*************
+*/
+header {
+    background: url(./biker-land-assets/image-1-mobile.jpg);
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+/* 
+++++
+Main
+++++
+*/
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* 
+***********
+Meet Alissa
+***********
+*/
+.alissa {
+    background-color: #F4F4F4;
+    padding: 1rem 0rem;
+}
+
+.alissa h2,
+.alissa p {
+    color: #1F2022;
+}
+
+.alissa button {
+    border-color: #1F2022;
+    margin-bottom: 0;
+}
+
+/* 
+**********
+Site links
+**********
+*/
+.secondaryNav {
+    background-image: url(./biker-land-assets/image-5.jpg);
+    background-size: cover;
+    padding-top: 1.5rem;
+}
+
+.secondaryNav ul {
+    padding: 1rem;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.secondaryNav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.secondaryNav a {
+    color: #F2A11C;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.secondaryNav a:active {
+    color: #F4F4F4;
+}
+
+/* 
+*************
+Image gallery
+*************
+*/
+.gram ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0rem;
+    margin: 0;
+}
+
+.gram img {
+    height: 100%;
+}
+
+/* 
+++++++
+Footer
+++++++
+*/
+footer {
+    background-color: #4A4A4A;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    padding-top: .25rem;
+}
+
+h3 {
+    padding-top: .5rem;
+}
+
+footer p {
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+input,
+footer button {
+    width: 100%;
+    padding: .75rem;
+}
+
+input {
+    font-size: .8rem;
+    color: #1F2022;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #4A4A4A;
+}
+
+footer button {
+    background-color: #F2A11C;
+    border: none;
+    color: #1F2022;
+    margin: .75rem 0rem;
+}
+
+.copyright {
+    background-color: #1F2022;
+    color: #F4F4F4;
+    margin: 0;
+    padding: .5rem;
+}
+
+/* 
+================================
+Portrait-mobile-specific styling
+================================
+*/
+@media (max-width: 900px) {
+    .pcNav {
+        display: none;
+    }
+
+    .pcSocial {
+        display: none;
+    }
+
+    .gram li {
+        width: 42.5%;
+    }
+
+    .gram li:last-child {
+        display: none;
+    }
+
+    .secondaryNav {
+        background-position: -55rem;
+    }
+}
+
+/* 
+========================
+Landscape mobile styling
+========================
+*/
+@media (min-width: 568px) and (orientation:landscape) {
+    header {
+        height: 105vh;
+        background-image: url(./biker-land-assets/image-1.jpg);
+    }
+
+    .navMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navMenu:target {
+        width: 40vw;
+    }
+
+    .navMenuClose {
+        position: absolute;
+        top: 0;
+    }
+
+    .secondaryNav {
+        background-position: -53rem;
+    }
+
+}
+
+/* 
+===============
+Desktop styling 
+===============
+*/
+@media (min-width: 900px) {
+
+    /* 
+    ++++++
+    Header
+    ++++++
+    */
+    header {
+        background-image: url(./biker-land-assets/image-1.jpg);
+        height: 100vh;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pcNav {
+        position: absolute;
+        top: 0;
+    }
+
+    .pcNav ul {
+        display: flex;
+    }
+
+    .pcNav li {
+        padding: 0rem 1rem;
+    }
+
+    .pcSocial {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pcSocial li {
+        padding: .25rem 2rem;
+    }
+
+    .pcSocial a {
+        color: #F2A11C;
+    }
+
+    .pcSocial a:active {
+        color: #F4F4F4;
+    }
+
+    .navMenuToggle {
+        display: none;
+    }
+
+    /* 
+    ++++
+    Main
+    ++++
+    */
+
+    /* 
+    *************
+    About section
+    *************
+    */
+    article {
+        display: flex;
+    }
+
+    article:first-child {
+        flex-direction: row-reverse;
+    }
+
+    .about .imgContainer {
+        max-width: 50%;
+    }
+
+    .about img {
+        height: 100%;
+    }
+
+    .about .wrapper {
+        display: flex;
+        align-items: flex-start;
+        padding: 3rem;
+        padding-top: 0;
+    }
+
+    .about p {
+        margin: 1.25rem 0rem;
+    }
+
+    .about button {
+        margin: 0;
+    }
+
+    /* 
+    ***********
+    Meet Alissa
+    ***********
+    */
+    .alissa {
+        padding: 4rem 0rem;
+    }
+
+    .alissa .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .alissa .imgContainer {
+        width: 30%;
+    }
+
+    .alissa article {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .alissa h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .alissa p {
+        margin: 1rem 0rem;
+    }
+
+    .alissa button {
+        margin: 0;
+    }
+
+    /* 
+    **********
+    Site links 
+    **********
+    */
+    .secondaryNav {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        background-position: 0;
+    }
+
+    .secondaryNav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Image gallery */
+    .gram ul {
+        padding-bottom: 4rem;
+    }
+
+    .gram li {
+        width: 28%;
+    }
+
+    /* 
+    ++++++
+    Footer
+    ++++++
+    */
+    footer {
+        text-align: left;
+    }
+
+    footer nav {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .correspond {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    form {
+        display: flex;
+        width: 25rem;
+    }
+
+    input,
+    footer button {
+        padding: .5rem;
+        margin: 0;
+    }
+
+    input {
+        text-align: left;
+        width: 70%;
+    }
+
+    input::placeholder {
+        text-align: left;
+    }
+
+    footer button {
+        padding: .5rem 0;
+        width: 30%;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+/* 
+=======================
+Tablet portrait styling
+=======================
+*/
+@media (min-width: 768px) and (orientation:portrait) {
+    header {
+        height: 56vh;
+        background-image: url(./biker-land-assets/image-1.jpg);
+        background-position: -10rem;
+    }
+
+    .navMenu:target {
+        width: 40vw;
+    }
+
+    .secondaryNav {
+        background-position: -53rem;
+    }
+
+}
+
+/* 
+========================
+Landscape tablet styling
+========================
+*/
+@media (min-width: 900px) and (max-width: 1080px) {
+    header {
+        background-position: -16rem;
+    }
+
+    .about article {
+        max-height: 18rem;
+    }
+
+    .about h2 {
+        margin-top: 1rem;
+    }
+
+    .about p {
+        margin: .75rem 0rem;
+    }
+
+    .secondaryNav {
+        background-position: -18rem;
+    }
+}

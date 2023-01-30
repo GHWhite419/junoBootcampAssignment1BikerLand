@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikerland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <!-- Desktop nav-bar -->
+            <nav class="pcNav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <ul class="pcSocial" aria-labelledby="socialHeading">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <!-- Mobile nav menu -->
+            <!-- Button to open menu -->
+            <a href="#navMenu" id="navMenuToggle" class="navMenuToggle">
+                <span class="sr-only">Open navigation menu</span>
+                <i class="fa-solid fa-bars fa-2xl" aria-hidden="true"></i>
+            </a>
+            <!-- Start of nav element -->
+            <nav id="navMenu" class="navMenu">
+                <!-- Button to close menu -->
+                <a href="#navMenuToggle" id="navMenuClose" class="navMenuClose">
+                    <span class="sr-only">Close navigation menu</span>
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </a>
+                <!-- Nav links -->
+                <h2 id="navHeading" class="sr-only">Site navigation</h2>
+                <ul aria-labelledby="navHeading">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <!-- Social media -->
+                <h2 id="socialHeading" class="sr-only">Our social media</h2>
+                <ul class="social" aria-labelledby="socialHeading">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+            <h1>Bikerland</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <article>
+                <div class="imgContainer">
+                    <img src="./biker-land-assets/image-2.jpg" aria-hidden="true">
+                </div>
+                <div class="wrapper">
+                    <h2>About us</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione iste animi doloribus sunt!
+                        Recusandae aut illo distinctio voluptates reiciendis? Eius voluptate error autem cumque velit
+                        excepturi. Reprehenderit, sint? Autem ducimus illo illum doloribus architecto consectetur, quis
+                        delectus impedit voluptas debitis minus at fuga saepe incidunt voluptatibus harum, corrupti
+                        alias id optio quos sed quae odit. Deserunt aspernatur magni sed laudantium?</p>
+                    <button>Read more</button>
+                </div>
+            </article>
+            <article>
+                <div class="imgContainer">
+                    <img src="./biker-land-assets/image-7.jpg" aria-hidden="true">
+                </div>
+                <div class="wrapper">
+                    <h2>Our mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere, inventore ut excepturi
+                        autem molestias sapiente culpa quasi assumenda exercitationem at hic necessitatibus eligendi.
+                        Doloribus corrupti fuga obcaecati nam expedita odit, a facilis, recusandae hic quia minima quo
+                        at! Eos quia beatae tenetur quis tempora voluptatem veniam quas quae quo libero perspiciatis
+                        quod impedit obcaecati similique, ut nesciunt molestias maiores?</p>
+                    <button>Read more</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="alissa">
+            <div class="wrapper">
+                <div class="imgContainer">
+                    <img src="./biker-land-assets/image-6.jpg"
+                        alt="A woman in a red windbreaker zooms down a city street on a bicycle.">
+                </div>
+                <article>
+                    <h2>Meet Alissa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dicta, eveniet ducimus corrupti
+                        at,
+                        sequi natus doloremque totam expedita amet praesentium quas esse laboriosam architecto sapiente
+                        libero corporis! Adipisci excepturi nemo ullam ipsam numquam magni! Illo, placeat sit? Ipsum aut
+                        nihil iste a sunt culpa velit pariatur corrupti optio veniam illum odio rerum quaerat tempora
+                        possimus, aperiam modi accusamus excepturi asperiores ex sed cum ut expedita? Rem architecto
+                        asperiores distinctio fuga voluptas inventore reiciendis porro, qui delectus aliquid natus quod
+                        soluta omnis voluptatum obcaecati laborum, quis dolorum officia incidunt eligendi deleniti quas.
+                        Nobis aliquam velit blanditiis reiciendis iusto. Non, fugiat?</p>
+                    <button>Read more</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="secondaryNav">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-bicycle fa-2xl"></i><a href="#">Products</a>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-people-group fa-2xl"></i><a href="#">Community</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone-flip fa-2xl"></i><a href="#">Reach out</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gram">
+            <h2>The Gram</h2>
+            <div class="gallery">
+                <ul>
+                    <li>
+                        <img src="./biker-land-assets/image-8.jpg"
+                            alt="A woman, wearing a red helmet and blue jacket, rides up the street on her bike.">
+                    </li>
+                    <li>
+                        <img src="./biker-land-assets/image-3.jpg"
+                            alt="A man in racing gear rides past pedestrians, the number 24 on his uniform.">
+                    </li>
+                    <li>
+                        <img src="./biker-land-assets/image-4.jpg"
+                            alt="An old bicycle rests against a rusty shack, a small basket fixed to the handlebars.">
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="correspond">
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>info@email.com | 123 - 456 - 7890</p>
+                    <p>123 some road, Toronto, ON</p>
+                    <p>A5A 5A5, Canada</p>
+                </div>
+                <div class="subscribe">
+                    <h3>Stay updated</h3>
+                    <p>Subscribe to our newsletter to stay updated.</p>
+                    <form action="#">
+                        <input type="email" placeholder="email address" id="email">
+                        <label class="sr-only" for="#email">Enter your email address</label>
+                        <button type="button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright &#169 2019 HackerYou</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/e4f1610b04.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
